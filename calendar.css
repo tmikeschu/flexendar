@@ -1,3 +1,43 @@
 .calendar {
+  padding: 5px;
+  font-family: Menlo, "Courier New", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #ECF0F1;
+  width: 95%;
+  height: 800px;
+  margin: 0 auto;
+  background-color: #2C3E50;
+  justify-content: center;
+  color: #ECF0F1;
 }
 
+.calendar section {
+  display: flex;
+  width: 100%;
+}
+
+.calendar .day {
+  background-color: #E74C3C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  border-top: 2px solid #ECF0F1;
+}
+
+.calendar >article {
+  text-align: right;
+}
+
+.calendar article {
+  width: 13%;
+  border-bottom: 2px solid #ECF0F1;
+  border-left: 2px solid #ECF0F1;
+  padding: 2px;
+}
+
+.calendar article:nth-of-type(7n) {
+  border-right: 2px solid #ECF0F1; 
+}
