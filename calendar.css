@@ -1,15 +1,15 @@
 .calendar {
-  padding: 5px;
-  font-family: Menlo, "Courier New", sans-serif;
+  background-color: #2C3E50;
+  border: 2px solid #ECF0F1;
+  color: #ECF0F1;
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid #ECF0F1;
-  width: 95%;
+  font-family: Menlo, "Courier New", sans-serif;
   height: 800px;
-  margin: 0 auto;
-  background-color: #2C3E50;
   justify-content: center;
-  color: #ECF0F1;
+  margin: 0 auto;
+  padding: 5px;
+  width: 95%;
 }
 
 .calendar section {
@@ -18,13 +18,13 @@
 }
 
 .calendar .day {
+  align-items: center;
   background-color: #E74C3C;
+  border-top: 2px solid #ECF0F1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: 3em;
-  border-top: 2px solid #ECF0F1;
+  justify-content: center;
 }
 
 .calendar >article {
@@ -32,10 +32,10 @@
 }
 
 .calendar article {
-  width: 13%;
   border-bottom: 2px solid #ECF0F1;
   border-left: 2px solid #ECF0F1;
   padding: 2px;
+  width: 13%;
 }
 
 .calendar article:nth-of-type(7n) {
